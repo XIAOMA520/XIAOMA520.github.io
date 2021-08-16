@@ -1,76 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>hexo个人博客搭建步骤-简洁版</title>
-    <url>/2021/08/10/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4-%E7%AE%80%E6%B4%81%E7%89%88/</url>
-    <content><![CDATA[<h2 id="cd-路径-clear-清除-npm-包管理器"><a href="#cd-路径-clear-清除-npm-包管理器" class="headerlink" title="cd 路径 clear 清除  npm (包管理器)"></a>cd 路径 clear 清除  npm (包管理器)</h2><h2 id="cd-打开-cd-退两层"><a href="#cd-打开-cd-退两层" class="headerlink" title="cd 打开 cd ../.. 退两层"></a>cd 打开 cd ../.. 退两层</h2><h2 id="ls-l-打开文件夹"><a href="#ls-l-打开文件夹" class="headerlink" title="ls -l:打开文件夹"></a>ls -l:打开文件夹</h2><h2 id="ls-打开文件"><a href="#ls-打开文件" class="headerlink" title="ls:打开文件"></a>ls:打开文件</h2><h2 id="搭建hexo博客前需要做的准备："><a href="#搭建hexo博客前需要做的准备：" class="headerlink" title="搭建hexo博客前需要做的准备："></a>搭建hexo博客前需要做的准备：</h2><h3 id="下载git-git下载地址"><a href="#下载git-git下载地址" class="headerlink" title="下载git git下载地址"></a>下载git <a href="https://git-scm.com/">git下载地址</a></h3><h3 id="注册github-github官网"><a href="#注册github-github官网" class="headerlink" title="注册github github官网"></a>注册github <a href="https://github.com/">github官网</a></h3><h3 id="下载node-js-node下载地址"><a href="#下载node-js-node下载地址" class="headerlink" title="下载node.js  node下载地址"></a>下载node.js  <a href="https://nodejs.org/zh-cn/">node下载地址</a></h3><h2 id="1"><a href="#1" class="headerlink" title="1:"></a>1:</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="(1)安装node.js"></a>(1)安装node.js</h3><h3 id="2-切换到root-（管理员模式）"><a href="#2-切换到root-（管理员模式）" class="headerlink" title="(2)切换到root （管理员模式）"></a>(2)切换到root （管理员模式）</h3><h3 id="3-查看node版本"><a href="#3-查看node版本" class="headerlink" title="(3)查看node版本 :"></a>(3)查看node版本 :</h3><pre><code class="bash"> node -v
-</code></pre>
-<h3 id="4-查看npm版本"><a href="#4-查看npm版本" class="headerlink" title="(4)查看npm版本"></a>(4)查看npm版本</h3><pre><code class="bash"> npm -v
-</code></pre>
-<h2 id="2"><a href="#2" class="headerlink" title="2:"></a>2:</h2><h3 id="1-安装镜像源-淘宝"><a href="#1-安装镜像源-淘宝" class="headerlink" title="(1)安装镜像源(淘宝) :"></a>(1)安装镜像源(淘宝) :</h3><pre><code class="bash"> npm install -g cnpm - -registry=https://registry.npm.taobao.org 
-</code></pre>
-<h2 id="3"><a href="#3" class="headerlink" title="3:"></a>3:</h2><h3 id="1-1"><a href="#1-1" class="headerlink" title="(1)"></a>(1)</h3><pre><code class="bash"> cnpm
-</code></pre>
-<h3 id="2-查看版本"><a href="#2-查看版本" class="headerlink" title="(2)查看版本"></a>(2)查看版本</h3><pre><code class="bash"> cnpm -v
-</code></pre>
-<h3 id="3-安装hexo博客"><a href="#3-安装hexo博客" class="headerlink" title="(3)安装hexo博客"></a>(3)安装hexo博客</h3><pre><code class="bash"> cnpm install -g hexo-cli
-</code></pre>
-<h3 id="4-测试hexo版本"><a href="#4-测试hexo版本" class="headerlink" title="(4)测试hexo版本"></a>(4)测试hexo版本</h3><pre><code class="bash"> hexo -v
-</code></pre>
-<h2 id="4-正式搭建博客"><a href="#4-正式搭建博客" class="headerlink" title="4:正式搭建博客"></a>4:正式搭建博客</h2><h3 id="1-建空文件夹"><a href="#1-建空文件夹" class="headerlink" title="(1)建空文件夹"></a>(1)建空文件夹</h3><pre><code class="bash"> mkdir blog
-</code></pre>
-<h3 id="2-hexo初始化："><a href="#2-hexo初始化：" class="headerlink" title="(2)hexo初始化："></a>(2)hexo初始化：</h3><pre><code class="bash"> hexo init
-</code></pre>
-<h3 id="3-启动博客"><a href="#3-启动博客" class="headerlink" title="(3)启动博客"></a>(3)启动博客</h3><pre><code class="bash"> hexo s
-</code></pre>
-<h2 id="5-写博客"><a href="#5-写博客" class="headerlink" title="5:写博客"></a>5:写博客</h2><h3 id="1-新建hexo文章"><a href="#1-新建hexo文章" class="headerlink" title="(1)新建hexo文章"></a>(1)新建hexo文章</h3><pre><code class="bash"> hexo n &quot;文章名字&quot;
-</code></pre>
-<h3 id="2-找到创建的文章"><a href="#2-找到创建的文章" class="headerlink" title="(2)找到创建的文章"></a>(2)找到创建的文章</h3><pre><code class="bash"> ls
-</code></pre>
-<h3 id="3-vim-文件名-修改内容或写内容"><a href="#3-vim-文件名-修改内容或写内容" class="headerlink" title="(3)vim +文件名 //修改内容或写内容"></a>(3)vim +文件名 //修改内容或写内容</h3><h2 id="6-每次写完一篇blog按一下步骤："><a href="#6-每次写完一篇blog按一下步骤：" class="headerlink" title="6:每次写完一篇blog按一下步骤："></a>6:每次写完一篇blog按一下步骤：</h2><h3 id="1-退到blog文件夹下"><a href="#1-退到blog文件夹下" class="headerlink" title="(1)退到blog文件夹下"></a>(1)退到blog文件夹下</h3><h3 id="2-清理"><a href="#2-清理" class="headerlink" title="(2)清理"></a>(2)清理</h3><pre><code class="bash"> hexo clean
-</code></pre>
-<h3 id="3-生成"><a href="#3-生成" class="headerlink" title="(3)生成"></a>(3)生成</h3><pre><code class="bash"> hexo g
-</code></pre>
-<h3 id="4-启动hexo"><a href="#4-启动hexo" class="headerlink" title="(4)启动hexo"></a>(4)启动hexo</h3><pre><code class="bash"> hexo s
-</code></pre>
-<h2 id="7-The-last-step"><a href="#7-The-last-step" class="headerlink" title="7:The last step"></a>7:The last step</h2><h3 id="1-安装git插件"><a href="#1-安装git插件" class="headerlink" title="(1)安装git插件"></a>(1)安装git插件</h3><pre><code class="bash"> cnpm install - -save hexo-deployer-git
-</code></pre>
-<h3 id="2-在blog文件夹下找到config-yml这个文件，修改其参数。"><a href="#2-在blog文件夹下找到config-yml这个文件，修改其参数。" class="headerlink" title="(2)在blog文件夹下找到config.yml这个文件，修改其参数。"></a>(2)在blog文件夹下找到config.yml这个文件，修改其参数。</h3><h3 id="如下："><a href="#如下：" class="headerlink" title="如下："></a>如下：</h3><h3 id="type-git"><a href="#type-git" class="headerlink" title="type:git"></a>type:git</h3><h3 id="repo-github仓库地址"><a href="#repo-github仓库地址" class="headerlink" title="repo:github仓库地址"></a>repo:github仓库地址</h3><h3 id="branch-master"><a href="#branch-master" class="headerlink" title="branch:master"></a>branch:master</h3><h3 id="3-部署到github"><a href="#3-部署到github" class="headerlink" title="(3)部署到github"></a>(3)部署到github</h3><pre><code class="bash"> hexo d
-</code></pre>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>hexo theme</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>my life</title>
-    <url>/2021/08/12/my-life/</url>
-    <content><![CDATA[<h2 id="boring"><a href="#boring" class="headerlink" title="boring!!"></a>boring!!</h2>]]></content>
-  </entry>
-  <entry>
-    <title>全球疫情最新新闻-美国</title>
-    <url>/2021/08/12/%E5%85%A8%E7%90%83%E7%96%AB%E6%83%85%E6%9C%80%E6%96%B0%E6%96%B0%E9%97%BB-%E7%BE%8E%E5%9B%BD/</url>
-    <content><![CDATA[<h2 id="美国新冠疫情反弹严重-专家担忧病毒再变异"><a href="#美国新冠疫情反弹严重-专家担忧病毒再变异" class="headerlink" title="美国新冠疫情反弹严重 专家担忧病毒再变异"></a>美国新冠疫情反弹严重 专家担忧病毒再变异</h2><p>来源：<a href="https://xhpfmapi.zhongguowangshi.com/vh512/share/10184843?channel=weixin">新华社</a></p>
-<p>2021-08-11 10:04</p>
-<p><strong>新华社华盛顿8月9日电 由于高传染性变异新冠病毒德尔塔毒株在美国加速传播，且当地仍有许多人尚未接种疫苗，导致疫情近期反弹严重。美国公共卫生专家担忧，若无法让绝大多数人接种疫苗，未来可能出现的新变异病毒或将突破疫苗防线。</strong></p>
-<p><img src="https://rs1.huanqiucdn.cn/dp/api/files/imageDir/4fe391fc20f583ddfeaf6daea8fd362d.png" alt="img">8月6日，人们在美国佛罗里达州迈阿密-戴德县的一个商业区游览。新华社发（莫妮卡·麦克盖文摄)</p>
-<h3 id="疫情反弹严重"><a href="#疫情反弹严重" class="headerlink" title="疫情反弹严重"></a>疫情反弹严重</h3><p><strong>近期，美国新冠疫情迅速恶化，日增确诊病例数反弹，8月初已回到半年前状态。美国国家卫生研究院院长弗朗西斯·柯林斯感叹，美国正为抗疫不力“付出惨痛代价”。</strong></p>
-<p><strong>美国疾病控制和预防中心发布的最新数据显示，截至8日，全美7天平均日增新冠确诊病例达97399例，8月3日至6日连续4天单日新增确诊病例超过10万例。</strong></p>
-<p><strong>美疾控中心6日公布的每周疫情报告显示，由于德尔塔毒株的传播，美国多个州正在经历大量或高水平的社区传播。</strong></p>
-<p><strong>在接种率较低的南部地区，医疗系统承受重压。据美联社报道，密西西比州35家医疗中心重症监护病房满员；阿肯色州新冠患者住院人数达到疫情暴发以来最高峰，全州重症监护病床仅空余8张。</strong></p>
-<h3 id="多种新冠变异病毒流行"><a href="#多种新冠变异病毒流行" class="headerlink" title="多种新冠变异病毒流行"></a>多种新冠变异病毒流行</h3><p><strong>美疾控中心6日指出，多种新冠变异病毒正在美国境内传播，德尔塔毒株仍是主流毒株，预计其感染病例占近期全美新增确诊病例的93%。</strong></p>
-<p><strong>除了广泛传播的德尔塔毒株，另一种变异毒株拉姆达毒株也在美国传播。根据国际共享基因序列资源“流感数据共享全球倡议”平台的数据，通过基因组测序，美国迄今已确诊了1060例拉姆达毒株感染病例。传染病专家表示，他们正在密切关注拉姆达毒株。</strong></p>
-<p><strong>据世界卫生组织统计，全球目前已出现的阿尔法、贝塔、伽马、德尔塔毒株，被标记为“需要关注”的变异病毒；埃塔、约塔、卡帕和拉姆达毒株则被标记为“需要留意”的变异病毒。据美疾控中心统计，目前被世卫组织标记的所有变异毒株均在美国传播，此外还有几种尚未被世卫组织标记的变异毒株。</strong></p>
-<h3 id="担忧病毒再变异"><a href="#担忧病毒再变异" class="headerlink" title="担忧病毒再变异"></a>担忧病毒再变异</h3><p><strong>在美国疫苗接种率较低的社区，日增新冠确诊病例数、住院和死亡人数继续增加。白宫应对新冠疫情协调专员杰弗里·津茨2日表示，新增病例集中于疫苗接种率偏低地区。</strong></p>
-<p><strong>美国国家过敏症和传染病研究所所长安东尼·福奇近日说，由德尔塔毒株引发的病例在美国各地“急剧增多”，除非大部分未接种的美国人行动起来，选择接种疫苗，否则美国可能在今秋“陷入麻烦中”，病毒将拥有充足机会再发生变异。</strong></p>
-<p><strong>美疾控中心主任萝谢尔·沃伦斯基近日在新闻发布会上说，新冠病毒主要在未接种疫苗的人群中传播。公共卫生和科学界最担心的是新冠病毒潜在的突变，最终可能导致疫苗无法有效预防重症和死亡。</strong></p>
-<p><strong>沃伦斯基说，再出现几个潜在突变，新冠病毒就会演变为一种极易传播的病毒，突破目前的疫苗防线。（参与记者：冯玉婧、杨士龙、张墨成）</strong></p>
-<p>​                                                                                                                </p>
-<p>​                                                                                                      责编：李青云</p>
-]]></content>
-      <tags>
-        <tag>美国疫情</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>my life</title>
+      <link href="/2021/08/12/my-life/"/>
+      <url>/2021/08/12/my-life/</url>
+      
+        <content type="html"><![CDATA[<h2 id="boring"><a href="#boring" class="headerlink" title="boring!!"></a>boring!!</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>全球疫情最新新闻-美国</title>
+      <link href="/2021/08/12/%E5%85%A8%E7%90%83%E7%96%AB%E6%83%85%E6%9C%80%E6%96%B0%E6%96%B0%E9%97%BB-%E7%BE%8E%E5%9B%BD/"/>
+      <url>/2021/08/12/%E5%85%A8%E7%90%83%E7%96%AB%E6%83%85%E6%9C%80%E6%96%B0%E6%96%B0%E9%97%BB-%E7%BE%8E%E5%9B%BD/</url>
+      
+        <content type="html"><![CDATA[<h2 id="美国新冠疫情反弹严重-专家担忧病毒再变异"><a href="#美国新冠疫情反弹严重-专家担忧病毒再变异" class="headerlink" title="美国新冠疫情反弹严重 专家担忧病毒再变异"></a>美国新冠疫情反弹严重 专家担忧病毒再变异</h2><p>来源：<a href="https://xhpfmapi.zhongguowangshi.com/vh512/share/10184843?channel=weixin">新华社</a></p><p>2021-08-11 10:04</p><p><strong>新华社华盛顿8月9日电 由于高传染性变异新冠病毒德尔塔毒株在美国加速传播，且当地仍有许多人尚未接种疫苗，导致疫情近期反弹严重。美国公共卫生专家担忧，若无法让绝大多数人接种疫苗，未来可能出现的新变异病毒或将突破疫苗防线。</strong></p><p><img src="https://rs1.huanqiucdn.cn/dp/api/files/imageDir/4fe391fc20f583ddfeaf6daea8fd362d.png" alt="img">8月6日，人们在美国佛罗里达州迈阿密-戴德县的一个商业区游览。新华社发（莫妮卡·麦克盖文摄)</p><h3 id="疫情反弹严重"><a href="#疫情反弹严重" class="headerlink" title="疫情反弹严重"></a>疫情反弹严重</h3><p><strong>近期，美国新冠疫情迅速恶化，日增确诊病例数反弹，8月初已回到半年前状态。美国国家卫生研究院院长弗朗西斯·柯林斯感叹，美国正为抗疫不力“付出惨痛代价”。</strong></p><p><strong>美国疾病控制和预防中心发布的最新数据显示，截至8日，全美7天平均日增新冠确诊病例达97399例，8月3日至6日连续4天单日新增确诊病例超过10万例。</strong></p><p><strong>美疾控中心6日公布的每周疫情报告显示，由于德尔塔毒株的传播，美国多个州正在经历大量或高水平的社区传播。</strong></p><p><strong>在接种率较低的南部地区，医疗系统承受重压。据美联社报道，密西西比州35家医疗中心重症监护病房满员；阿肯色州新冠患者住院人数达到疫情暴发以来最高峰，全州重症监护病床仅空余8张。</strong></p><h3 id="多种新冠变异病毒流行"><a href="#多种新冠变异病毒流行" class="headerlink" title="多种新冠变异病毒流行"></a>多种新冠变异病毒流行</h3><p><strong>美疾控中心6日指出，多种新冠变异病毒正在美国境内传播，德尔塔毒株仍是主流毒株，预计其感染病例占近期全美新增确诊病例的93%。</strong></p><p><strong>除了广泛传播的德尔塔毒株，另一种变异毒株拉姆达毒株也在美国传播。根据国际共享基因序列资源“流感数据共享全球倡议”平台的数据，通过基因组测序，美国迄今已确诊了1060例拉姆达毒株感染病例。传染病专家表示，他们正在密切关注拉姆达毒株。</strong></p><p><strong>据世界卫生组织统计，全球目前已出现的阿尔法、贝塔、伽马、德尔塔毒株，被标记为“需要关注”的变异病毒；埃塔、约塔、卡帕和拉姆达毒株则被标记为“需要留意”的变异病毒。据美疾控中心统计，目前被世卫组织标记的所有变异毒株均在美国传播，此外还有几种尚未被世卫组织标记的变异毒株。</strong></p><h3 id="担忧病毒再变异"><a href="#担忧病毒再变异" class="headerlink" title="担忧病毒再变异"></a>担忧病毒再变异</h3><p><strong>在美国疫苗接种率较低的社区，日增新冠确诊病例数、住院和死亡人数继续增加。白宫应对新冠疫情协调专员杰弗里·津茨2日表示，新增病例集中于疫苗接种率偏低地区。</strong></p><p><strong>美国国家过敏症和传染病研究所所长安东尼·福奇近日说，由德尔塔毒株引发的病例在美国各地“急剧增多”，除非大部分未接种的美国人行动起来，选择接种疫苗，否则美国可能在今秋“陷入麻烦中”，病毒将拥有充足机会再发生变异。</strong></p><p><strong>美疾控中心主任萝谢尔·沃伦斯基近日在新闻发布会上说，新冠病毒主要在未接种疫苗的人群中传播。公共卫生和科学界最担心的是新冠病毒潜在的突变，最终可能导致疫苗无法有效预防重症和死亡。</strong></p><p><strong>沃伦斯基说，再出现几个潜在突变，新冠病毒就会演变为一种极易传播的病毒，突破目前的疫苗防线。（参与记者：冯玉婧、杨士龙、张墨成）</strong></p><p>​                                                                                                                </p><p>​                                                                                                      责编：李青云</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 美国疫情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo个人博客搭建步骤-简洁版</title>
+      <link href="/2021/08/10/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4-%E7%AE%80%E6%B4%81%E7%89%88/"/>
+      <url>/2021/08/10/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4-%E7%AE%80%E6%B4%81%E7%89%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="cd-路径-clear-清除-npm-包管理器"><a href="#cd-路径-clear-清除-npm-包管理器" class="headerlink" title="cd 路径 clear 清除  npm (包管理器)"></a>cd 路径 clear 清除  npm (包管理器)</h2><h2 id="cd-打开-cd-退两层"><a href="#cd-打开-cd-退两层" class="headerlink" title="cd 打开 cd ../.. 退两层"></a>cd 打开 cd ../.. 退两层</h2><h2 id="ls-l-打开文件夹"><a href="#ls-l-打开文件夹" class="headerlink" title="ls -l:打开文件夹"></a>ls -l:打开文件夹</h2><h2 id="ls-打开文件"><a href="#ls-打开文件" class="headerlink" title="ls:打开文件"></a>ls:打开文件</h2><h2 id="搭建hexo博客前需要做的准备："><a href="#搭建hexo博客前需要做的准备：" class="headerlink" title="搭建hexo博客前需要做的准备："></a>搭建hexo博客前需要做的准备：</h2><h3 id="下载git-git下载地址"><a href="#下载git-git下载地址" class="headerlink" title="下载git git下载地址"></a>下载git <a href="https://git-scm.com/">git下载地址</a></h3><h3 id="注册github-github官网"><a href="#注册github-github官网" class="headerlink" title="注册github github官网"></a>注册github <a href="https://github.com/">github官网</a></h3><h3 id="下载node-js-node下载地址"><a href="#下载node-js-node下载地址" class="headerlink" title="下载node.js  node下载地址"></a>下载node.js  <a href="https://nodejs.org/zh-cn/">node下载地址</a></h3><h2 id="1"><a href="#1" class="headerlink" title="1:"></a>1:</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="(1)安装node.js"></a>(1)安装node.js</h3><h3 id="2-切换到root-（管理员模式）"><a href="#2-切换到root-（管理员模式）" class="headerlink" title="(2)切换到root （管理员模式）"></a>(2)切换到root （管理员模式）</h3><h3 id="3-查看node版本"><a href="#3-查看node版本" class="headerlink" title="(3)查看node版本 :"></a>(3)查看node版本 :</h3><pre><code class="bash"> node -v</code></pre><h3 id="4-查看npm版本"><a href="#4-查看npm版本" class="headerlink" title="(4)查看npm版本"></a>(4)查看npm版本</h3><pre><code class="bash"> npm -v</code></pre><h2 id="2"><a href="#2" class="headerlink" title="2:"></a>2:</h2><h3 id="1-安装镜像源-淘宝"><a href="#1-安装镜像源-淘宝" class="headerlink" title="(1)安装镜像源(淘宝) :"></a>(1)安装镜像源(淘宝) :</h3><pre><code class="bash"> npm install -g cnpm - -registry=https://registry.npm.taobao.org </code></pre><h2 id="3"><a href="#3" class="headerlink" title="3:"></a>3:</h2><h3 id="1-1"><a href="#1-1" class="headerlink" title="(1)"></a>(1)</h3><pre><code class="bash"> cnpm</code></pre><h3 id="2-查看版本"><a href="#2-查看版本" class="headerlink" title="(2)查看版本"></a>(2)查看版本</h3><pre><code class="bash"> cnpm -v</code></pre><h3 id="3-安装hexo博客"><a href="#3-安装hexo博客" class="headerlink" title="(3)安装hexo博客"></a>(3)安装hexo博客</h3><pre><code class="bash"> cnpm install -g hexo-cli</code></pre><h3 id="4-测试hexo版本"><a href="#4-测试hexo版本" class="headerlink" title="(4)测试hexo版本"></a>(4)测试hexo版本</h3><pre><code class="bash"> hexo -v</code></pre><h2 id="4-正式搭建博客"><a href="#4-正式搭建博客" class="headerlink" title="4:正式搭建博客"></a>4:正式搭建博客</h2><h3 id="1-建空文件夹"><a href="#1-建空文件夹" class="headerlink" title="(1)建空文件夹"></a>(1)建空文件夹</h3><pre><code class="bash"> mkdir blog</code></pre><h3 id="2-hexo初始化："><a href="#2-hexo初始化：" class="headerlink" title="(2)hexo初始化："></a>(2)hexo初始化：</h3><pre><code class="bash"> hexo init</code></pre><h3 id="3-启动博客"><a href="#3-启动博客" class="headerlink" title="(3)启动博客"></a>(3)启动博客</h3><pre><code class="bash"> hexo s</code></pre><h2 id="5-写博客"><a href="#5-写博客" class="headerlink" title="5:写博客"></a>5:写博客</h2><h3 id="1-新建hexo文章"><a href="#1-新建hexo文章" class="headerlink" title="(1)新建hexo文章"></a>(1)新建hexo文章</h3><pre><code class="bash"> hexo n &quot;文章名字&quot;</code></pre><h3 id="2-找到创建的文章"><a href="#2-找到创建的文章" class="headerlink" title="(2)找到创建的文章"></a>(2)找到创建的文章</h3><pre><code class="bash"> ls</code></pre><h3 id="3-vim-文件名-修改内容或写内容"><a href="#3-vim-文件名-修改内容或写内容" class="headerlink" title="(3)vim +文件名 //修改内容或写内容"></a>(3)vim +文件名 //修改内容或写内容</h3><h2 id="6-每次写完一篇blog按一下步骤："><a href="#6-每次写完一篇blog按一下步骤：" class="headerlink" title="6:每次写完一篇blog按一下步骤："></a>6:每次写完一篇blog按一下步骤：</h2><h3 id="1-退到blog文件夹下"><a href="#1-退到blog文件夹下" class="headerlink" title="(1)退到blog文件夹下"></a>(1)退到blog文件夹下</h3><h3 id="2-清理"><a href="#2-清理" class="headerlink" title="(2)清理"></a>(2)清理</h3><pre><code class="bash"> hexo clean</code></pre><h3 id="3-生成"><a href="#3-生成" class="headerlink" title="(3)生成"></a>(3)生成</h3><pre><code class="bash"> hexo g</code></pre><h3 id="4-启动hexo"><a href="#4-启动hexo" class="headerlink" title="(4)启动hexo"></a>(4)启动hexo</h3><pre><code class="bash"> hexo s</code></pre><h2 id="7-The-last-step"><a href="#7-The-last-step" class="headerlink" title="7:The last step"></a>7:The last step</h2><h3 id="1-安装git插件"><a href="#1-安装git插件" class="headerlink" title="(1)安装git插件"></a>(1)安装git插件</h3><pre><code class="bash"> cnpm install - -save hexo-deployer-git</code></pre><h3 id="2-在blog文件夹下找到config-yml这个文件，修改其参数。"><a href="#2-在blog文件夹下找到config-yml这个文件，修改其参数。" class="headerlink" title="(2)在blog文件夹下找到config.yml这个文件，修改其参数。"></a>(2)在blog文件夹下找到config.yml这个文件，修改其参数。</h3><h3 id="如下："><a href="#如下：" class="headerlink" title="如下："></a>如下：</h3><h3 id="type-git"><a href="#type-git" class="headerlink" title="type:git"></a>type:git</h3><h3 id="repo-github仓库地址"><a href="#repo-github仓库地址" class="headerlink" title="repo:github仓库地址"></a>repo:github仓库地址</h3><h3 id="branch-master"><a href="#branch-master" class="headerlink" title="branch:master"></a>branch:master</h3><h3 id="3-部署到github"><a href="#3-部署到github" class="headerlink" title="(3)部署到github"></a>(3)部署到github</h3><pre><code class="bash"> hexo d</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> hexo theme </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
